@@ -1,0 +1,6 @@
+#!/bin/sh
+clang++ -O3 -c parseint.cpp -std=c++20 -Wno-c99-designator
+clang++ -O3 -c ops.cpp -std=c++20 -Wno-c99-designator
+clang++ -O3 -c false.cpp -std=c++20 -Wno-c99-designator
+clang++ -O3 -o false false.o ops.o parseint.o -std=c++20 -Wno-c99-designator \
+	-licuio -licui18n -licuuc -licudata -ldl -lffi

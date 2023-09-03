@@ -1,0 +1,4 @@
+#!/bin/sh
+clang++ -O3 -S parseint.cpp -std=c++20 -Wno-c99-designator
+clang++ -O3 -S ops.cpp -std=c++20 -Wno-c99-designator
+clang++ -O3 -S false.cpp -std=c++20 -Wno-c99-designator
